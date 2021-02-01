@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>MpaCore.PhoneBook.Migrator</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>MpaCore.PhoneBook.Migrator</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="appsettings.json;log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Castle.Log4Net" Version="5.13.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MpaCore.PhoneBook.Core\MpaCore.PhoneBook.Core.csproj" />
+    <ProjectReference Include="..\MpaCore.PhoneBook.EntityFrameworkCore\MpaCore.PhoneBook.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

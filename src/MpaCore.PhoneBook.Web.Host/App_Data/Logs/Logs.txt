@@ -1,0 +1,89 @@
+DEBUG 2021-02-01 22:32:22,885 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2021-02-01 22:32:22,945 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2021-02-01 22:32:22,960 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MpaCore.PhoneBook.Web.Host.Startup.PhoneBookWebHostModule, MpaCore.PhoneBook.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MpaCore.PhoneBook.PhoneBookWebCoreModule, MpaCore.PhoneBook.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MpaCore.PhoneBook.PhoneBookApplicationModule, MpaCore.PhoneBook.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,994 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MpaCore.PhoneBook.PhoneBookCoreModule, MpaCore.PhoneBook.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,995 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,995 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,995 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,996 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,996 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MpaCore.PhoneBook.EntityFrameworkCore.PhoneBookEntityFrameworkModule, MpaCore.PhoneBook.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,996 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,996 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,997 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,997 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,997 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:22,997 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:23,000 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2021-02-01 22:32:23,078 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-02-01 22:32:23,078 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-02-01 22:32:23,078 [1    ] o.Configuration.LanguageManagementConfig - Converted PhoneBook (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-02-01 22:32:23,078 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-02-01 22:32:23,474 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: MpaCore.PhoneBook.EntityFrameworkCore.PhoneBookDbContext, MpaCore.PhoneBook.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-02-01 22:32:24,375 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2021-02-01 22:32:24,496 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2021-02-01 22:32:24,552 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2021-02-01 22:32:24,577 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: PhoneBook
+DEBUG 2021-02-01 22:32:24,616 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2021-02-01 22:32:24,789 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2021-02-01 22:32:24,898 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[MpaCore.PhoneBook.MultiTenancy.Tenant, MpaCore.PhoneBook.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MpaCore.PhoneBook.Authorization.Users.User, MpaCore.PhoneBook.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2021-02-01 22:32:24,946 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2021-02-01 22:32:24,946 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MpaCore.PhoneBook.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2021-02-01 22:32:24,952 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MpaCore.PhoneBook.Users.Dto.CreateUserDto
+DEBUG 2021-02-01 22:32:24,952 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MpaCore.PhoneBook.Users.Dto.UserDto
+DEBUG 2021-02-01 22:32:24,952 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MpaCore.PhoneBook.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2021-02-01 22:32:24,952 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MpaCore.PhoneBook.Sessions.Dto.UserLoginInfoDto
+DEBUG 2021-02-01 22:32:24,953 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MpaCore.PhoneBook.Roles.Dto.PermissionDto
+DEBUG 2021-02-01 22:32:24,953 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MpaCore.PhoneBook.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2021-02-01 22:32:24,953 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MpaCore.PhoneBook.MultiTenancy.Dto.TenantDto
+INFO  2021-02-01 22:32:28,821 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,zh-Hans,ja
+INFO  2021-02-01 22:32:29,124 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Run\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2021-02-01 22:32:29,214 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2021-02-01 22:32:29,319 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'MpaCore.PhoneBook.Web.Host.Controllers.HomeController.Index (MpaCore.PhoneBook.Web.Host)'
+INFO  2021-02-01 22:32:32,333 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MpaCore.PhoneBook.Web.Host.Controllers.HomeController (MpaCore.PhoneBook.Web.Host).
+INFO  2021-02-01 22:32:33,301 [13   ] c.Infrastructure.ControllerActionInvoker - Executing action method MpaCore.PhoneBook.Web.Host.Controllers.HomeController.Index (MpaCore.PhoneBook.Web.Host) - Validation state: Valid
+INFO  2021-02-01 22:32:33,308 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action method MpaCore.PhoneBook.Web.Host.Controllers.HomeController.Index (MpaCore.PhoneBook.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.4106ms.
+INFO  2021-02-01 22:32:33,407 [10   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2021-02-01 22:32:33,414 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action MpaCore.PhoneBook.Web.Host.Controllers.HomeController.Index (MpaCore.PhoneBook.Web.Host) in 1075.4465ms
+INFO  2021-02-01 22:32:33,417 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'MpaCore.PhoneBook.Web.Host.Controllers.HomeController.Index (MpaCore.PhoneBook.Web.Host)'
+INFO  2021-02-01 22:32:33,434 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4222.0308ms 302 
+INFO  2021-02-01 22:32:33,444 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2021-02-01 22:32:33,468 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.4571ms 301 
+INFO  2021-02-01 22:32:33,470 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2021-02-01 22:32:33,508 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 37.2424ms 200 text/html;charset=utf-8
+INFO  2021-02-01 22:32:33,534 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2021-02-01 22:32:33,536 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2021-02-01 22:32:33,568 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2021-02-01 22:32:33,568 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2021-02-01 22:32:33,571 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 36.2987ms 200 text/css
+INFO  2021-02-01 22:32:33,572 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 34.2068ms 200 application/javascript
+INFO  2021-02-01 22:32:33,592 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2021-02-01 22:32:33,599 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2021-02-01 22:32:33,601 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 9.8752ms 200 application/javascript
+INFO  2021-02-01 22:32:33,618 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2021-02-01 22:32:33,620 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2021-02-01 22:32:33,624 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'E:\Workspaces\CSharpProjects\20210201\MpaCore.PhoneBook\aspnet-core\src\MpaCore.PhoneBook.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2021-02-01 22:32:33,626 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'E:\Workspaces\CSharpProjects\20210201\MpaCore.PhoneBook\aspnet-core\src\MpaCore.PhoneBook.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2021-02-01 22:32:33,627 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 9.8492ms 200 application/javascript
+INFO  2021-02-01 22:32:33,629 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.077ms 200 application/javascript
+INFO  2021-02-01 22:32:34,035 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2021-02-01 22:32:34,040 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'MpaCore.PhoneBook.Web.Host.Controllers.AntiForgeryController.SetCookie (MpaCore.PhoneBook.Web.Host)'
+INFO  2021-02-01 22:32:34,054 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller MpaCore.PhoneBook.Web.Host.Controllers.AntiForgeryController (MpaCore.PhoneBook.Web.Host).
+INFO  2021-02-01 22:32:34,074 [9    ] c.Infrastructure.ControllerActionInvoker - Executing action method MpaCore.PhoneBook.Web.Host.Controllers.AntiForgeryController.SetCookie (MpaCore.PhoneBook.Web.Host) - Validation state: Valid
+INFO  2021-02-01 22:32:34,078 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2021-02-01 22:32:34,093 [9    ] c.Infrastructure.ControllerActionInvoker - Executed action method MpaCore.PhoneBook.Web.Host.Controllers.AntiForgeryController.SetCookie (MpaCore.PhoneBook.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 16.0144ms.
+INFO  2021-02-01 22:32:34,100 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2021-02-01 22:32:34,106 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2021-02-01 22:32:34,108 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7.9912ms 200 image/png
+INFO  2021-02-01 22:32:34,117 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2021-02-01 22:32:34,230 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 151.5812ms 200 application/json;charset=utf-8
+INFO  2021-02-01 22:32:34,241 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action MpaCore.PhoneBook.Web.Host.Controllers.AntiForgeryController.SetCookie (MpaCore.PhoneBook.Web.Host) in 184.8738ms
+INFO  2021-02-01 22:32:34,243 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'MpaCore.PhoneBook.Web.Host.Controllers.AntiForgeryController.SetCookie (MpaCore.PhoneBook.Web.Host)'
+INFO  2021-02-01 22:32:34,245 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 210.9154ms 200 application/json; charset=utf-8
+DEBUG 2021-02-01 22:34:03,642 [13   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2021-02-01 22:34:03,644 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2021-02-01 22:34:03,644 [13   ] , Culture=neutral, PublicKeyToken=null]] - Stop background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[MpaCore.PhoneBook.MultiTenancy.Tenant, MpaCore.PhoneBook.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MpaCore.PhoneBook.Authorization.Users.User, MpaCore.PhoneBook.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2021-02-01 22:34:03,645 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2021-02-01 22:34:03,645 [13   ] , Culture=neutral, PublicKeyToken=null]] - WaitToStop background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[MpaCore.PhoneBook.MultiTenancy.Tenant, MpaCore.PhoneBook.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MpaCore.PhoneBook.Authorization.Users.User, MpaCore.PhoneBook.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2021-02-01 22:34:03,645 [13   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
