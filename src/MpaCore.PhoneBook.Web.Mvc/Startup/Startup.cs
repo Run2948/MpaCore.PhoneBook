@@ -46,8 +46,9 @@ namespace MpaCore.PhoneBook.Web.Startup
                 {
                     options.SerializerSettings.ContractResolver = new AbpMvcContractResolver(IocManager.Instance)
                     {
-                        NamingStrategy = new CamelCaseNamingStrategy()
+                        NamingStrategy = new CamelCaseNamingStrategy(),
                     };
+                    options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
                 });
 
             IdentityRegistrar.Register(services);

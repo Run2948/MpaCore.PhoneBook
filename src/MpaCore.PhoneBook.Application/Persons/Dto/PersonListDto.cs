@@ -9,7 +9,7 @@ namespace MpaCore.PhoneBook.Persons.Dto
     /// <summary>
     /// 联系人列表Dto
     /// </summary>
-    [AutoMap(typeof(Person))]
+    [AutoMapFrom(typeof(Person))]
     public class PersonListDto : EntityDto<int>
     {
         /// <summary>

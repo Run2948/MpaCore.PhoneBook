@@ -1,0 +1,34 @@
+﻿@using MpaCore.PhoneBook.Web.Models.Common.Modals
+@using MpaCore.PhoneBook.Persons.Dto
+@using Abp.Authorization.Users
+@model GetPersonForEditOutput
+@{
+    Layout = null;
+}
+@await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditPerson")))
+<form name="RoleEditForm" role="form" class="form-horizontal">
+    <input type="hidden" name="Id" value="@Model.Person.Id" />
+    <div class="modal-body">
+        <div class="form-group row required">
+            <label class="col-md-3 col-form-label">@L("FullName")</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" name="Name" required maxlength="@AbpUserBase.MaxUserNameLength" minlength="2" value="@Model.Person.Name">
+            </div>
+        </div>
+        <div class="form-group row required">
+            <label class="col-md-3 col-form-label">@L("EmailAddress")</label>
+            <div class="col-md-9">
+                <input type="email" class="form-control" name="EmailAddress" required maxlength="@AbpUserBase.MaxEmailAddressLength" value="@Model.Person.EmailAddress">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label">@L("Address")</label>
+            <div class="col-md-9">
+                <textarea class="form-control" name="Address" maxlength="255" rows="3">@Model.Person.Address</textarea>
+            </div>
+        </div>
+    </div>
+    @await Html.PartialAsync("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+</form>
+
+<script src="~/view-resources/Views/Persons/_EditModal.js" asp-append-version="true"></script>

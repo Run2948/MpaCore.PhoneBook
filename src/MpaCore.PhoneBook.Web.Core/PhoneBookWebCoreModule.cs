@@ -71,6 +71,8 @@ namespace MpaCore.PhoneBook
         {
             IocManager.Resolve<ApplicationPartManager>()
                 .AddApplicationPartsIfNotAddedBefore(typeof(PhoneBookWebCoreModule).Assembly);
+
+            Configuration.Modules.AbpAspNetCore().UseMvcDateTimeFormatForAppServices = true;
         }
     }
 }

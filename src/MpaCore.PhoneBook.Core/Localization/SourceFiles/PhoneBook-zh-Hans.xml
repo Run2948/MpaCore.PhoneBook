@@ -75,6 +75,7 @@
     
     <text name="Cancel">取消</text>
     <text name="OK">确定</text>
+    <text name="Save">保存</text>
     <text name="CreateNewRole">创建新角色</text>
     <text name="RoleDetails">角色详情</text>
     <text name="RolePermission">角色权限</text>
@@ -108,6 +109,14 @@
 	<text name="Register" >注册</text>
 	<text name="Back" >返回</text>
 
+	<text name="Persons" >联系人</text>
+    <text name="Address">家庭地址</text>
+
+    <text name="CreateNewPerson">新建联系人</text>
+    <text name="EditPerson">编辑联系人</text>
+
+    <text name="SavedSuccessfully" value="保存成功" />
+    <text name="SuccessfullyDeleted" value="删除成功" />
 
   </texts>
 </localizationDictionary>

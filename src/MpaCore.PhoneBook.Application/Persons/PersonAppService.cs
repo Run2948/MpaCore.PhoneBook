@@ -31,6 +31,10 @@ namespace MpaCore.PhoneBook.Persons
             var query = _personRepository.GetAll();
 
             // TODO:根据传入的参数添加过滤条件
+            if (!string.IsNullOrEmpty(input.FilterText))
+            {
+                query = query.Where(x => x.Name.Contains(input.FilterText));
+            }
 
             var personCount = await query.CountAsync();
 
@@ -102,6 +106,7 @@ namespace MpaCore.PhoneBook.Persons
             //TODO:新增前的逻辑判断，是否允许新增
 
             var entity = await _personRepository.InsertAsync(ObjectMapper.Map<Person>(input));
+            await CurrentUnitOfWork.SaveChangesAsync();
             return ObjectMapper.Map<PersonEditDto>(entity);
         }
 
@@ -114,6 +119,7 @@ namespace MpaCore.PhoneBook.Persons
 
             // var entity = await _personRepository.GetAsync(input.Id.Value);
             await _personRepository.UpdateAsync(ObjectMapper.Map<Person>(input));
+            await CurrentUnitOfWork.SaveChangesAsync();
         }
 
         /// <summary>
@@ -128,6 +134,7 @@ namespace MpaCore.PhoneBook.Persons
                 throw new UserFriendlyException("该联系人已经消失在数据库中，无法完成该删除操作");
             }
             await _personRepository.DeleteAsync(input.Id);
+            await CurrentUnitOfWork.SaveChangesAsync();
         }
 
         /// <summary>
@@ -137,6 +144,7 @@ namespace MpaCore.PhoneBook.Persons
         {
             //TODO:批量删除前的逻辑判断，是否允许删除
             await _personRepository.DeleteAsync(s => input.Contains(s.Id));
+            await CurrentUnitOfWork.SaveChangesAsync();
         }
     }
 }

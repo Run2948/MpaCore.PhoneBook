@@ -52,11 +52,21 @@ namespace MpaCore.PhoneBook.Web.Startup
                 )
                 .AddItem(
                     new MenuItemDefinition(
+                        PageNames.Persons,
+                        L("Persons"),
+                        url: "Persons",
+                        icon: "fas fa-address-book",
+                        permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Persons),
+                        order: 4
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
                         PageNames.About,
                         L("About"),
                         url: "About",
                         icon: "fas fa-info-circle",
-                        order: 4
+                        order: 5
                     )
                 );
         }
