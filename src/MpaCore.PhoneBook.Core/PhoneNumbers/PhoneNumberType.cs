@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MpaCore.PhoneBook.PhoneBook.PhoneNumbers
+namespace MpaCore.PhoneBook.PhoneNumbers
 {
     /// <summary>
     /// 电话号码类型
@@ -10,18 +10,18 @@ namespace MpaCore.PhoneBook.PhoneBook.PhoneNumbers
     public enum PhoneNumberType
     {
         /// <summary>
-        /// 移动电话
+        ///     移动
         /// </summary>
         Mobile,
 
         /// <summary>
-        /// 家庭
+        ///     住宅
         /// </summary>
         Home,
 
         /// <summary>
-        /// 公司
+        ///     商业
         /// </summary>
-        Company
+        Business
     }
 }

@@ -20,9 +20,9 @@ namespace MpaCore.PhoneBook.Migrations
                     IsDeleted = table.Column<bool>(nullable: false),
                     DeleterUserId = table.Column<long>(nullable: true),
                     DeletionTime = table.Column<DateTime>(nullable: true),
-                    Name = table.Column<string>(maxLength: 50, nullable: false),
-                    EmailAddress = table.Column<string>(maxLength: 50, nullable: true),
-                    Address = table.Column<string>(maxLength: 200, nullable: true)
+                    Name = table.Column<string>(maxLength: 32, nullable: false),
+                    EmailAddress = table.Column<string>(maxLength: 255, nullable: true),
+                    Address = table.Column<string>(maxLength: 255, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -33,12 +33,13 @@ namespace MpaCore.PhoneBook.Migrations
                 name: "PhoneNumber",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    Id = table.Column<long>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Number = table.Column<string>(maxLength: 11, nullable: false),
+                    CreationTime = table.Column<DateTime>(nullable: false),
+                    CreatorUserId = table.Column<long>(nullable: true),
+                    Number = table.Column<string>(maxLength: 16, nullable: false),
                     Type = table.Column<int>(nullable: false),
-                    PersonId = table.Column<int>(nullable: false),
-                    CreationTime = table.Column<DateTime>(nullable: false)
+                    PersonId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

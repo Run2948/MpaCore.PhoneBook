@@ -1,38 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using Abp.Domain.Entities.Auditing;
-using MpaCore.PhoneBook.PhoneBook.PhoneNumbers;
+using Abp.AutoMapper;
 
-namespace MpaCore.PhoneBook.PhoneBook.Persons
+namespace MpaCore.PhoneBook.Persons.Dto
 {
     /// <summary>
-    /// 人员
+    /// 联系人编辑用Dto
     /// </summary>
-    public class Person : FullAuditedEntity
+    [AutoMap(typeof(Person))]
+    public class PersonEditDto
     {
+        /// <summary>
+        ///   主键Id
+        /// </summary>
+        public int? Id { get; set; }
+
         /// <summary>
         /// 姓名
         /// </summary>
         [Required]
-        [MaxLength(50)]
+        [MaxLength(32)]
         public string Name { get; set; }
 
         /// <summary>
         /// 邮箱
         /// </summary>
-        [EmailAddress]
-        [MaxLength(50)]
+        [MaxLength(225)]
         public string EmailAddress { get; set; }
 
         /// <summary>
-        /// 地址信息
+        /// 家庭住址
         /// </summary>
-        [MaxLength(200)]
+        [MaxLength(225)]
         public string Address { get; set; }
-
-        // public virtual ICollection<PhoneNumber> PhoneNumbers { get; set; }
     }
 }

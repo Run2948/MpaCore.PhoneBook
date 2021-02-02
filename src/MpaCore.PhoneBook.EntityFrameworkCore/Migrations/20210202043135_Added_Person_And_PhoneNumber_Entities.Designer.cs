@@ -10,7 +10,7 @@ using MpaCore.PhoneBook.EntityFrameworkCore;
 namespace MpaCore.PhoneBook.Migrations
 {
     [DbContext(typeof(PhoneBookDbContext))]
-    [Migration("20210201161720_Added_Person_And_PhoneNumber_Entities")]
+    [Migration("20210202043135_Added_Person_And_PhoneNumber_Entities")]
     partial class Added_Person_And_PhoneNumber_Entities
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1577,7 +1577,7 @@ namespace MpaCore.PhoneBook.Migrations
                     b.ToTable("AbpTenants");
                 });
 
-            modelBuilder.Entity("MpaCore.PhoneBook.PhoneBook.Persons.Person", b =>
+            modelBuilder.Entity("MpaCore.PhoneBook.Persons.Person", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1585,8 +1585,8 @@ namespace MpaCore.PhoneBook.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Address")
-                        .HasColumnType("nvarchar(200)")
-                        .HasMaxLength(200);
+                        .HasColumnType("nvarchar(255)")
+                        .HasMaxLength(255);
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -1601,8 +1601,8 @@ namespace MpaCore.PhoneBook.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("EmailAddress")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(255)")
+                        .HasMaxLength(255);
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -1615,28 +1615,31 @@ namespace MpaCore.PhoneBook.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(32)")
+                        .HasMaxLength(32);
 
                     b.HasKey("Id");
 
                     b.ToTable("Person");
                 });
 
-            modelBuilder.Entity("MpaCore.PhoneBook.PhoneBook.PhoneNumbers.PhoneNumber", b =>
+            modelBuilder.Entity("MpaCore.PhoneBook.PhoneNumbers.PhoneNumber", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<long?>("CreatorUserId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Number")
                         .IsRequired()
-                        .HasColumnType("nvarchar(11)")
-                        .HasMaxLength(11);
+                        .HasColumnType("nvarchar(16)")
+                        .HasMaxLength(16);
 
                     b.Property<int>("PersonId")
                         .HasColumnType("int");
@@ -1866,10 +1869,10 @@ namespace MpaCore.PhoneBook.Migrations
                         .HasForeignKey("LastModifierUserId");
                 });
 
-            modelBuilder.Entity("MpaCore.PhoneBook.PhoneBook.PhoneNumbers.PhoneNumber", b =>
+            modelBuilder.Entity("MpaCore.PhoneBook.PhoneNumbers.PhoneNumber", b =>
                 {
-                    b.HasOne("MpaCore.PhoneBook.PhoneBook.Persons.Person", "Person")
-                        .WithMany()
+                    b.HasOne("MpaCore.PhoneBook.Persons.Person", "Person")
+                        .WithMany("PhoneNumbers")
                         .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

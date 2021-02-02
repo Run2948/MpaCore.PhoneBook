@@ -3,8 +3,8 @@ using Abp.Zero.EntityFrameworkCore;
 using MpaCore.PhoneBook.Authorization.Roles;
 using MpaCore.PhoneBook.Authorization.Users;
 using MpaCore.PhoneBook.MultiTenancy;
-using MpaCore.PhoneBook.PhoneBook.Persons;
-using MpaCore.PhoneBook.PhoneBook.PhoneNumbers;
+using MpaCore.PhoneBook.Persons;
+using MpaCore.PhoneBook.PhoneNumbers;
 
 namespace MpaCore.PhoneBook.EntityFrameworkCore
 {
